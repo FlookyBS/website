@@ -5,6 +5,7 @@ html, body {
 
 body { 
     background: linear-gradient(to top, darkblue, blue); 
+    background-attachment: fixed;
     color: white; 
     font-family: 'Press Start 2P' 
 }
