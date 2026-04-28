@@ -9,7 +9,7 @@ async function startAudio() {
   if (started) return;
 
   try {
-    const res = await fetch("tracks.json", { cache: "no-store" });
+    const res = await fetch("../assets/tracks.json", { cache: "no-store" });
     const tracks = await res.json();
     const track = tracks[Math.floor(Math.random() * tracks.length)];
 
