@@ -9,8 +9,17 @@ body {
     font-family: 'Press Start 2P' 
 }
 
+h2, h3, p {
+    padding-left: 1vw
+}
+
+hr {
+    margin: 1.8vh
+}
+
 h1 { 
-    color: white; text-align: center; 
+    color: white; 
+    text-align: center;
 }
 
 h2 { 
@@ -31,20 +40,29 @@ strong {
     
 }
 
+hr {
+    opacity: 0.5;
+}
+
 .container {
     border: 12px solid cyan;
     margin: 12px;
-    padding: 15px;
     background-color: blue;
     border-style: ridge;
+    display: block;
+    width: 70%;
+    margin: auto;
 }
 
 .glowbert {
     width: 200px;
     height: auto;
+    animation: spin 5s linear infinite;
 }
 
 .centered {
+    margin: 0;
+    padding-left: 0;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -56,6 +74,15 @@ strong {
     display: block;
     margin: auto;
     width: 40%;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .uppercase {
