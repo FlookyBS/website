@@ -8,5 +8,15 @@
     "file": "audio/dds.mp3",
     "title": "내 마음은 떨고",
     "artist": "death's dynamic shroud"
+  },
+  {
+    "file": "audio/startup.mp3",
+    "title": "B:/Start Up",
+    "artist": "Blank Banshee"
+  },
+  {
+    "file": "audio/desperate.mp3",
+    "title": "DESPERATE 想见 👁️",
+    "artist": "iacon"
   }
 ]
