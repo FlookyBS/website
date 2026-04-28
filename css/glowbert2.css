@@ -81,6 +81,28 @@ hr {
     width: 70%;
     margin: auto;
     overflow-wrap: anywhere;
+    box-shadow: 10px 10px darkblue;
+}
+
+.button {
+    border: 12px solid red;
+    margin: auto;
+    background-color: RED;
+    display: block;
+    width: fit-content;
+    overflow-wrap: anywhere;
+    box-shadow: 10px 10px darkred;
+    color: white;
+    text-decoration: none;
+    user-select: none;
+}
+
+.button:active {
+    color: darkgray;
+    border: 12px solid darkred;
+    background-color: darkred;
+    box-shadow: none;
+    transform: translate(11px, 11px)
 }
 
 .glowbert {
