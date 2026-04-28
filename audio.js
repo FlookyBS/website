@@ -1,4 +1,4 @@
-const nowPlaying = document.getElementById("i85g-2");
+const nowPlaying = document.getElementById("song-indicator");
 
 const audio = new Audio();
 audio.volume = 1.0;
