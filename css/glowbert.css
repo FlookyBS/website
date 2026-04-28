@@ -64,9 +64,14 @@ hr {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 4px;
+    }
+
+    .topbar .left,
+    .topbar .right {
+        white-space: wrap;
     }
 }
-
 .container {
     border: 12px solid cyan;
     margin: 12px;
@@ -115,10 +120,11 @@ hr {
 
 .song-indicator {
     opacity: 0.67;
-    margin: 10px
+    margin-top: 0px
 }
 
 #song-indicator {
+    margin: 10px;
     margin-left: auto;
     font-size: 12px
 }
