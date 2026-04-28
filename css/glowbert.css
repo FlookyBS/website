@@ -32,7 +32,7 @@ p {
 }
 
 a {
-    color: violet 
+    color: #bccff2 
 }
 
 strong {
@@ -44,6 +44,19 @@ hr {
     opacity: 0.5;
 }
 
+.topbar {
+    top: 0;
+    left: 0;
+    width: auto;
+    padding: 8px;
+    border: 0px solid black;
+    margin: 0px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
 .container {
     border: 12px solid cyan;
     margin: 12px;
@@ -52,6 +65,7 @@ hr {
     display: block;
     width: 70%;
     margin: auto;
+    overflow-wrap: anywhere;
 }
 
 .glowbert {
@@ -73,7 +87,7 @@ hr {
 .glowbert-img {
     display: block;
     margin: auto;
-    width: 40%;
+    width: 30dvh;
 }
 
 @keyframes spin {
@@ -91,4 +105,9 @@ hr {
 
 .song-indicator {
     opacity: 0.67;
+}
+
+#song-indicator {
+    margin-left: auto;
+    font-size: 12px
 }

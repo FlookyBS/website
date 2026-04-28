@@ -1,27 +1,12 @@
 [
   {
-    "file": "audio/track1.mp3",
-    "title": "RETURN 守心 🏝️",
-    "artist": "iacon"
+    "file": "audio/youneedafriend.mp3",
+    "title": "You Need a Friend",
+    "artist": "Adam Massey"
   },
   {
-    "file": "audio/track2.mp3",
-    "title": "CD Player pt III",
+    "file": "audio/dds.mp3",
+    "title": "내 마음은 떨고",
     "artist": "death's dynamic shroud"
-  },
-  {
-    "file": "audio/track3.mp3",
-    "title": "혼자 남은 지금 꼴이 (Reprise)",
-    "artist": "death's dynamic shroud"
-  },
-  {
-    "file": "audio/track4.mp3",
-    "title": "Mommy Issues",
-    "artist": "Fennie"
-  },
-  {
-    "file": "audio/track5.mp3",
-    "title": "Concussion",
-    "artist": "TANDY® 1000™"
   }
 ]

@@ -21,7 +21,7 @@ async function startAudio() {
     started = true;
 
     nowPlaying.textContent =
-      `Now playing: ${track.title} — ${track.artist}`;
+      `𝅘𝅥𝅮 "${track.title}" by ${track.artist}`;
 
     document.removeEventListener("touchstart", startAudio);
     document.removeEventListener("click", startAudio);
