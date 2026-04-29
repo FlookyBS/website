@@ -169,10 +169,12 @@ hr {
   bottom: -100px;
   width: 40px;
   height: 40px;
-  background: white;
-  border-radius: 50%;
+  background-image: url(/assets/bubble.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0%;
   opacity: 0.5;
-  animation: rise 10s infinite ease-in;
+  animation: rise 6s steps(30, end) infinite;
 }
 
 .bubble:nth-child(1){
@@ -254,18 +256,104 @@ hr {
   animation-delay: 4s;
 }
 
-@keyframes rise{
-  0%{
-    bottom: -100px;
-    transform: translateX(0);
-  }
-  
-  50%{
-    transform: translate(100px);
+@keyframes rise {
+  0% {
+    transform: translate(0, 0);
   }
 
-  100%{
-    bottom: 1080px;
-    transform: translateX(-200px);
+  50% {
+    transform: translate(100px, -500px);
   }
+
+  100% {
+    transform: translate(-200px, -1080px);
+  }
+}
+ 
+/* 8-Bit Speech Bubbles by Karl Rombauts */
+
+.speech-bubble {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 16px;
+  line-height: 1.3em;
+  background-color: #fff;
+  color: #000;
+  padding: 12px;
+  box-shadow: 0 -4px #fff, 0 -8px #000, 4px 0 #fff, 4px -4px #000, 8px 0 #000, 0 4px #fff, 0 8px #000, -4px 0 #fff, -4px 4px #000, -8px 0 #000, -4px -4px #000, 4px 4px #000;
+  box-sizing: border-box;
+  width: 200px;
+}
+
+.speech-bubble::after {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.speech-bubble.shadow {
+  box-shadow: 0 -4px #fff, 0 -8px #000, 4px 0 #fff, 4px -4px #000, 8px 0 #000, 0 4px #fff, 0 8px #000, -4px 0 #fff, -4px 4px #000, -8px 0 #000, -4px -4px #000, 4px 4px #000, 4px 12px rgba(0, 0, 0, 0.1), 12px 4px rgba(0, 0, 0, 0.1), 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.speech-bubble.mini {
+  width: 110px;
+  font-size: 10px;
+  padding: 4px;
+}
+
+.speech-bubble.medium {
+  width: 350px;
+}
+
+.speech-bubble.large {
+  width: 560px;
+  font-size: 24px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.speech-bubble.grow {
+  width: initial;
+}
+
+.speech-bubble.top::after {
+  height: 4px;
+  width: 4px;
+  top: -8px;
+  left: 32px;
+  box-shadow: 0 -4px #000, 0 -8px #000, 0 -12px #000, 0 -16px #000, -4px -12px #000, -8px -8px #000, -12px -4px #000, -4px -4px #fff, -8px -4px #fff, -4px -8px #fff, -4px 0 #fff, -8px 0 #fff, -12px 0 #fff;
+}
+
+.speech-bubble.right::after {
+  height: 4px;
+  width: 4px;
+  top: 84px;
+  right: -8px;
+  background: white;
+  box-shadow: 4px -4px #fff, 4px 0 #fff, 8px 0 #fff, 0 -8px #fff, 4px 4px #000, 8px 4px #000, 12px 4px #000, 16px 4px #000, 12px 0 #000, 8px -4px #000, 4px -8px #000, 0 -4px #fff;
+}
+
+.speech-bubble.bottom::after {
+  height: 4px;
+  width: 4px;
+  bottom: -8px;
+  left: 32px;
+  box-shadow: 0 4px #000, 0 8px #000, 0 12px #000, 0 16px #000, -4px 12px #000, -8px 8px #000, -12px 4px #000, -4px 4px #fff, -8px 4px #fff, -4px 8px #fff, -4px 0 #fff, -8px 0 #fff, -12px 0 #fff;
+}
+
+.speech-bubble.left::after {
+  height: 4px;
+  width: 4px;
+  top: 20px;
+  left: -8px;
+  background: white;
+  box-shadow: -4px -4px #fff, -4px 0 #fff, -8px 0 #fff, 0 -8px #fff, -4px 4px #000, -8px 4px #000, -12px 4px #000, -16px 4px #000, -12px 0 #000, -8px -4px #000, -4px -8px #000, 0 -4px #fff;
+}
+
+.speech-bubble.moveabit {
+  transform: translateX(-70px);
 }
