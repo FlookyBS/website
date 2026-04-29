@@ -109,7 +109,7 @@ hr {
 .glowbert {
     width: 200px;
     height: auto;
-    animation: spin 4s steps(30, end) infinite;
+    animation: spin 6s steps(30, end) infinite;
 }
 
 .centered {
@@ -373,7 +373,7 @@ hr {
 
 .marquee__track {
   display: inline-flex;
-  animation: marquee 4s steps(30, end) infinite;
+  animation: marquee 6s steps(30, end) infinite;
 }
 
 .marquee__item {
