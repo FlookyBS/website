@@ -20,8 +20,8 @@ async function startAudio() {
 
     started = true;
 
-    nowPlaying.textContent =
-      `𝅘𝅥𝅮 "${track.title}" by ${track.artist}`;
+    nowPlaying.innerHTML =
+  `𝅘𝅥𝅮 "<a href="${track.url}" target="_blank">${track.title}</a>" by ${track.artist}`;
 
     document.removeEventListener("touchstart", startAudio);
     document.removeEventListener("click", startAudio);

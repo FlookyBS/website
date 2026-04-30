@@ -2,31 +2,37 @@
   {
     "file": "audio/youneedafriend.webm",
     "title": "You Need a Friend",
-    "artist": "Adam Massey"
+    "artist": "Adam Massey",
+    "url": "https://www.youtube.com/watch?v=_e3QEg4E7_o"
   },
   {
     "file": "audio/dds.webm",
     "title": "내 마음은 떨고",
-    "artist": "death's dynamic shroud"
+    "artist": "death's dynamic shroud",
+    "url": "https://deathsdynamicshroud.bandcamp.com/track/--224"
   },
   {
     "file": "audio/startup.webm",
     "title": "B:/Start Up",
-    "artist": "Blank Banshee"
+    "artist": "Blank Banshee",
+    "url": "https://blankbanshee.bandcamp.com/track/b-start-up"
   },
   {
     "file": "audio/desperate.webm",
     "title": "DESPERATE 想见 👁️",
-    "artist": "iacon"
+    "artist": "iacon",
+    "url": "https://iaconofficial.bandcamp.com/track/desperate"
   },
   {
     "file": "audio/opusno1elevator.ogg",
     "title": "Opus Number 1 (Elevator Cover)",
-    "artist": "Stevia Sphere"
+    "artist": "Stevia Sphere",
+    "url": "https://mypetflamingo.bandcamp.com/track/stevia-sphere-opus-number-1-elevator-cover"
   },
   {
     "file": "audio/theciscokid.ogg",
     "title": "The Cisco Kid",
-    "artist": "Wizard of Loneliness"
+    "artist": "Wizard of Loneliness",
+    "url": "https://mypetflamingo.bandcamp.com/track/wizard-of-loneliness-the-cisco-kid"
   }
 ]
