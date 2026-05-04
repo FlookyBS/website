@@ -2,11 +2,16 @@
 You have **arrived** at the source code for my website, [flooky.monster](https://flooky.monster).
 
 ## Information
-...It's a website, what else did you expect?
+This website...is a website. What else did you expect?
 
 ## Dependencies
-- You need a browser
-- Nothing more, just a browser
+- >=Ruby 3.4
+- You also need a web browser
+- Nothing else, just a web browser
+
+## Instructions
+- `bundle install` (if Bundler is missing, run `gem install bundler` and then try again)
+- To test it locally, run `bundle exec jekyll serve --livereload`
 
 ## Credits
 1. 8-Bit Speech Bubbles by Karl Rombauts
