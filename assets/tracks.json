@@ -34,5 +34,29 @@
     "title": "The Cisco Kid",
     "artist": "Wizard of Loneliness",
     "url": "https://mypetflamingo.bandcamp.com/track/wizard-of-loneliness-the-cisco-kid"
+  },
+  {
+    "file": "/audio/hello.ogg",
+    "title": "h e l l o",
+    "artist": "Timeshare '94",
+    "url": "https://mypetflamingo.bandcamp.com/track/timeshare-94-h-e-l-l-o"
+  },
+  {
+    "file": "/audio/nhs.ogg",
+    "title": "NHS (Friday 4PM Mix)",
+    "artist": "winterquilt",
+    "url": "https://mypetflamingo.bandcamp.com/track/winterquilt-nhs-friday-4pm-mix"
+  },
+  {
+    "file": "/audio/prism.ogg",
+    "title": "PRISM 棱镜 💎",
+    "artist": "iacon",
+    "url": "https://iaconofficial.bandcamp.com/track/prism"
+  },
+  {
+    "file": "/audio/origins.ogg",
+    "title": "*K* Origins",
+    "artist": "GDNacho",
+    "url": "https://gdnacho.bandcamp.com/track/k-origins"
   }
 ]
