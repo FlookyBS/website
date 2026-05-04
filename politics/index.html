@@ -1,6 +1,5 @@
 ---
 ---
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -42,7 +41,7 @@
 </div>
 
 <hr>
-<p>Last edited on: {{ page.last_modified_at }}</p>
+<p>Last edited on: {{ page.last_modified_at | date: "%B %d, %Y" }}</p>
 
 	<section class="sticky">
 		<div class="bubbles">
