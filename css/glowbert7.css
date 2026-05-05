@@ -58,6 +58,7 @@ hr {
     position: sticky;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 50;
 }
 
 @media (max-width: 600px) {
