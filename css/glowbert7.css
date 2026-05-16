@@ -92,7 +92,7 @@ hr {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  column-gap: clamp(6rem, 12vw, 6rem); /* horizontal spacing */
+  column-gap: clamp(3rem, 12vw, 3rem); /* horizontal spacing */
   row-gap: 0.3rem;
 }
 
@@ -122,9 +122,10 @@ hr {
 }
 
 .glowbert {
-    width: 200px;
+    width: 150px;
     height: auto;
     animation: spin 6s steps(30, end) infinite;
+    z-index: -1
 }
 
 .centered {
@@ -402,4 +403,82 @@ hr {
   to {
     transform: translateX(-100%);
   }
+}
+
+.clickbaitcircle {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+}
+
+.clickbaitcircle::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 12px solid red;
+    border-radius: 50%;
+    z-index: 2;
+    pointer-events: none;
+    animation-name: clickbaitcircle-anim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    
+}
+
+@keyframes clickbaitcircle-anim {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* css-arrows by Mary*/
+
+.arrow-right,
+.long-arrow-right{
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-top: 12px solid red;
+  border-left: 12px solid red;
+  animation-name: clickbaitcircle-anim;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  
+}
+.arrow-right,
+.long-arrow-right{
+ transform: rotate(115deg) translate(72px, -100px);
+}
+
+.long-arrow-right::after{
+  content: "";
+  display: block;
+  width: 14px;
+  height: 150px;
+  background-color: red;
+  transform: rotate(-45deg) translate(48px, 7px);
+  left: 0;
+  top: 0;
+  animation-name: clickbaitcircle-anim;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
 }
