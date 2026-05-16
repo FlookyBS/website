@@ -98,13 +98,15 @@ hr {
 
 .button-array {
   margin: 0 auto;
+  padding-left: 2%;
+  padding-right: 2%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   column-gap: 2rem;
   row-gap: 2rem;
-  max-width: 1000px
+  max-width: 1400px
 }
 
 .textbox {
