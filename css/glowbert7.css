@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 
 body { 
@@ -84,6 +85,19 @@ hr {
     margin: auto;
     overflow-wrap: anywhere;
     box-shadow: 10px 10px darkblue;
+}
+
+.top-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: clamp(6rem, 12vw, 6rem); /* horizontal spacing */
+  row-gap: 0.3rem;
+}
+
+.textbox {
+  width: 85dvw
 }
 
 .button {

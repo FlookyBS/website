@@ -810,6 +810,7 @@ __      _____  ___ ___   _   ___ _____
   color: #000;
 }
 .titleofthepage {
-  font-size: 12dvh;
-  padding: 5%
+  font-size: clamp(3rem, 15vw, 6rem);
+  line-height: 250%;
+  overflow: hidden;
 }
