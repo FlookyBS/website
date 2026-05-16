@@ -96,6 +96,17 @@ hr {
   row-gap: 0.3rem;
 }
 
+.button-array {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  max-width: 1000px
+}
+
 .textbox {
   width: 85dvw
 }
@@ -406,7 +417,7 @@ hr {
 }
 
 .clickbaitcircle {
-    position: relative; 
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -449,22 +460,26 @@ hr {
 /* css-arrows by Mary*/
 
 .arrow-right,
-.long-arrow-right{
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-top: 12px solid red;
-  border-left: 12px solid red;
-  animation-name: clickbaitcircle-anim;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-  
+.long-arrow-right {
+    position: absolute;        /* anchor to the circle */
+    top: 0;
+    right: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-top: 12px solid red;
+    border-left: 12px solid red;
+    transform: rotate(115deg) translate(20px, -30px); /* adjust as needed */
+    animation-name: clickbaitcircle-anim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    z-index: 3;
 }
 .arrow-right,
 .long-arrow-right{
- transform: rotate(115deg) translate(72px, -100px);
+ transform: rotate(115deg) translate(340px, 210px);
 }
 
 .long-arrow-right::after{
@@ -481,4 +496,11 @@ hr {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
 }
