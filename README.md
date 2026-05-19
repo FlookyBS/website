@@ -5,7 +5,7 @@ You have **arrived** at the source code for my website, [flooky.monster](https:/
 This website...is a website. What else did you expect?
 
 ## Dependencies
-- >=Ruby 3.4
+- Ruby 3.4
 - You also need a web browser
 - Nothing else, just a web browser
 
@@ -17,3 +17,5 @@ This website...is a website. What else did you expect?
 1. 8-Bit Speech Bubbles by Karl Rombauts
 2. Pure CSS animated bubble background by Momika Shrestha
 3. CSS Marquee by Ben Nadel
+4. css-arrows by Mary
+5. [css3wordart by arizzitano](https://github.com/arizzitano/css3wordart)
