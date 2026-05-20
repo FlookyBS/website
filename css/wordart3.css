@@ -9,7 +9,7 @@
 -------------------------------------- */
 @font-face {
   font-family: 'MicrosoftSansSerif';
-  src: url('/fonts/MicrosoftSansSerif.eot?') format('eot'), url('/fonts/MicrosoftSansSerif.woff') format('woff'), url('/fonts/MicrosoftSansSerif.ttf') format('truetype'), url('/fonts/MicrosoftSansSerif.svg#MicrosoftSansSerif') format('svg');
+  src: url('/fonts/MicrosoftSansSerif.eot') format('eot'), url('/fonts/MicrosoftSansSerif.woff') format('woff'), url('/fonts/MicrosoftSansSerif.ttf') format('truetype'), url('/fonts/MicrosoftSansSerif.svg#MicrosoftSansSerif') format('svg');
 }
 /* -------------------------------------
 __      _____  ___ ___   _   ___ _____
