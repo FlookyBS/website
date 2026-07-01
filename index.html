@@ -1,32 +1,153 @@
+---
+---
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flooky</title>
-
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/newfavicon.png">
-
-    <link rel="stylesheet" href="https://unpkg.com/7.css">
-    <link rel="stylesheet" href="/css/flooky.css">
-
+	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	
+	<title>Flooky</title>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+	
+	<meta name="description" content="Guess I'm not a bottom feeder, huh?">
+    <meta name="keywords" content="FlookyMonster, FlookyTheCube, FlookyBS, Flooky, Glowbert, Glowy">
+    <meta name="author" content="Flooky">
+    <meta property="og:title" content="Flooky">
+    <meta property="og:description" content="Guess I'm not a bottom feeder, huh?">
+    <meta property="og:image" content="https://flooky.monster/assets/glowbert_pin.webp">
+    <meta property="og:url" content="https://flooky.monster/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Flooky">
+    <meta name="twitter:description" content="Guess I'm not a bottom feeder, huh?">
+    <meta name="twitter:image" content="https://flooky.monster/assets/glowbert_pin.webp">
+	
+	<link rel="stylesheet" href="https://unpkg.com/7.css/dist/7.scoped.css">
+	<link rel="stylesheet" href="/css/glowbert10.css"/>
+	<link rel="stylesheet" href="/css/wordart4.css"/>
 </head>
 <body>
-    <div class="background">
-        <div class="window glass active" style="max-width: 100%">
-            <div class="title-bar">
-                <div class="title-bar-controls"></div>
-            </div>
-            <div class="window-body has-space">
-                <h2>My name is <strong>Fen</strong>, but you can call me <strong>Flooky</strong>.<br></h2><p> 
+	<!-- TOPBAR STARTS HERE -->
+	<div class="topbar">
+		<div class="left">HOME | <a href="/schedule">SCHEDULE</a> | <a href="https://flooky.straw.page">ASK</a> | <a href="/politics">POLITICS</a></div>
+		<div id="song-indicator" class="right song-indicator small-text uppercase">
+			<strong>CLICK SITE TO PLAY MUSIC</strong>
+		</div> 
+	</div>
+
+	<noscript>
+		<style>
+			#song-indicator { display: none; }
+		</style>
+	</noscript>
+
+	<script src="/scripts/audio.js" defer></script>
+	<!-- TOPBAR ENDS HERE -->
+
+	<style>
+    /* your override, loaded after */
+    .background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 20vh;
+    }
+
+	.normal-text {
+		color: black;
+	}
+
+	.window-body form {
+    text-align: right;
+	margin: 0;
+    padding: 0;
+	}
+	</style>
+	<div class="win7">
+		<div class="background">
+  			<div class="window glass active" style="max-width: 90%">
+    			<div class="title-bar">
+      				<div class="title-bar-text">Warning</div>
+      				<div class="title-bar-controls">
+        		
+      </div>
+    </div>
+    <div class="window-body has-space">
+      <p class=normal-text>This website is in the process of recieving a major overhaul, expect this site to change radically. In the meantime, this design will stay here but it might change in the future.  </p>
+		<form action="/newindex.html" method="get">
+			<button onclick="">See the new site</button>
+		</form>
+	</div>
+    	
+  </div>
+</div>
+	</div>
+
+	<div class="top-container">
+		<div class="clickbaitcircle">
+			<div class="long-arrow-right"></div>
+			<img src="./assets/glowbert.webp" alt="Glowbert" class="glowbert">
+		</div>
+		<div class="wordart superhero titleofthepage">
+        	<span class="text" data-text="Who is this?">Who is this?</span>
+    	</div>
+		<div class="container">
+			<h2>My name is <strong>Fen</strong>, but you can call me <strong>Flooky</strong>.<br></h2><p> 
 			I'm <strong>20 years old</strong> and currently 
 			<strong>studying</strong> systems analyst.<br><br>
-			Right now this website is going through a huge overhaul, so none of the usual things are where they're supposed to be. Click the button below to return to the old site.</p>
-            <form action="/oldindex.html" method="get">
-                <button type="submit">Go back to the old site</button>
-            </form>
-            </div>
-        </div>
-    </div>
+			I made this website for an assignment and 
+			I honestly learned a lot of CSS in the process... 
+			<strong>So why not do bad stuff against graphic design 
+			conventions in the process? Lol</strong><br><br>
+			Here you will find all of my socials, and other resources that pertain to.. well, <strong>me</strong>.</p>
+		</div>
+	</div>
+
+	<br>
+	<br>
+
+	<h2 class="centered">Find me on:</h2>
+	<br>
+ 	<div class="button-array">
+     	<a target="_blank" href="https://www.youtube.com/@FlookyBS" class="button">YOUTUBE</a>
+		<a target="_blank" href="https://twitter.com/Flooky" class="button">TWITTER</a>
+        <a target="_blank" href="https://github.com/FlookyBS" class="button">GITHUB</a></li>
+		<a target="_blank" href="https://soundcloud.com/flookybs" class="button">SOUNDCLOUD</a></li>
+		<a target="_blank" href="https://fennie.bandcamp.com" class="button">BANDCAMP</a></li>
+		<a target="_blank" href="https://tiktok.com/@flookybs" class="button">TIKTOK</a></li>
+ 	</div>
+	<br>
+	<br>
+	<h2 class="centered">Contact me:</h2>
+	<br>
+	<div class="button-array">
+		<a target="_blank" href="mailto:contact@flooky.monster" class="button">EMAIL</a>
+		<a target="_blank" href="https://escargot.chat/+fluffeon/profile/" class="button">ESCARGOT MSN</a>
+	</div>
+	</li>
+	<br>
+	<br>
+	<br>
+ 	<hr>
+
+ 	<p><a target="_blank" href="https://github.com/FlookyBS/website">Visit the site's source</a></p>
+
+	<section class="sticky">
+		<div class="bubbles">
+		<div class="bubble"></div>
+		<div class="bubble"></div>
+		<div class="bubble"></div>
+		<div class="bubble"></div>
+		<div class="bubble"></div>
+		<div class="bubble"></div>
+		<div class="bubble"></div>
+		<div class="bubble"></div>
+		<div class="bubble"></div>
+		<div class="bubble"></div>
+		<div class="bubble"></div>
+	</div>
+
 </body>
 </html>
