@@ -189,6 +189,8 @@ h2 {
     display: inline-block;
     width: 64px;
     height: 64px;
+    overflow: hidden;
+    flex-shrink: 0; /* never let this shrink, no matter how tight space gets */
 }
 
 .aero-frame img {
