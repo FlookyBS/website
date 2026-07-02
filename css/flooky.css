@@ -3,9 +3,171 @@
   src: url('/css/fonts/seguisym.ttf') format('truetype');
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
 body { 
     background: linear-gradient(to bottom, #bccff2, rgb(66, 66, 109)); 
     background-attachment: fixed;
     font-family: 'Segoe UI', sans-serif
 }
 
+h2, h3, p {
+    padding-left: 1vw
+}
+
+hr {
+    margin: 1.8vh
+}
+
+h2 { 
+    font-size: 18px; 
+    font-weight: lighter;
+    color: #045BCD;
+}
+
+.introduction {
+    display: flex;
+}
+
+.topbar {
+    top: 0;
+    left: 0;
+    width: auto;
+    padding: 8px;
+    border: 0px solid black;
+    margin: 0px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 50;
+}
+
+@media (max-width: 600px) {
+    .topbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 4px;
+    }
+
+    .topbar .left,
+    .topbar .right {
+        white-space: wrap;
+    }
+}
+.container {
+    border: 12px solid cyan;
+    margin: 12px;
+    background-color: blue;
+    border-style: ridge;
+    display: block;
+    width: 70%;
+    margin: auto;
+    overflow-wrap: anywhere;
+    box-shadow: 10px 10px darkblue;
+}
+
+.top-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: clamp(3rem, 12vw, 3rem); /* horizontal spacing */
+  row-gap: 0.3rem;
+}
+
+.button-array {
+  margin: 0 auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  max-width: 1400px
+}
+
+.textbox {
+  width: 85dvw
+}
+
+.button {
+    border: 12px solid red;
+    margin: auto;
+    background-color: RED;
+    display: block;
+    width: fit-content;
+    overflow-wrap: anywhere;
+    box-shadow: 10px 10px darkred;
+    color: white;
+    text-decoration: none;
+    user-select: none;
+}
+
+.button:active {
+    color: darkgray;
+    border: 12px solid darkred;
+    background-color: darkred;
+    box-shadow: none;
+    transform: translate(11px, 11px)
+}
+
+.glowbert {
+    width: 150px;
+    height: auto;
+    animation: spin 6s steps(30, end) infinite;
+    z-index: -1
+}
+
+.centered {
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+.glowbert-img {
+    display: block;
+    margin: auto;
+    width: 30dvh;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.song-indicator {
+    opacity: 0.67;
+    margin-top: 0px
+}
+
+#song-indicator {
+    margin: 10px;
+    margin-left: auto;
+    font-size: 12px
+}
+
+.separator {
+  opacity: 0%;
+}
