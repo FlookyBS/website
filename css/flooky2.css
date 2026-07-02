@@ -207,3 +207,39 @@ h2 {
     pointer-events: none; /* clicks go through */
     z-index: 1;
 }
+
+.people-container {
+    display: flex
+}
+
+.people-container information {
+    color: black
+}
+
+.control-panel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.title h2 {
+    margin: 0 0 2px 0; /* small gap to links, no bottom whitespace */
+    color: #006e12;
+    padding-left: 0.30em
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* stacks each <a> tightly on top of the next */
+    transform: translateY(-2px) translateX(6px)
+}
+.links a {
+    color: #0066dd;
+    line-height: 1.2;
+}
