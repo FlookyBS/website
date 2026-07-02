@@ -232,7 +232,6 @@ h2 {
 }
 .title h2 {
     margin: 0 0 2px 0; /* small gap to links, no bottom whitespace */
-    color: #006e12;
     padding-left: 0.30em
 }
 .links {
@@ -244,4 +243,20 @@ h2 {
 .links a {
     color: #0066dd;
     line-height: 1.2;
+}
+
+.link-colour {
+    color: #0066dd;
+}
+
+.biglink-colour {
+    color: #006e12;
+}
+
+.biglink-colour:hover {
+  color: #00ae5d;
+}
+
+.link-colour:hover {
+    color: #6ca2f4
 }
