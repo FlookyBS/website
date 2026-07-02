@@ -161,3 +161,17 @@ h2 {
     gap: 8px;
     margin-top: 8px;
 }
+
+.responsive-video {
+    width: 100%;
+    max-width: 1200px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 0;
+}
+
+.responsive-album {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+}
