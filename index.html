@@ -27,11 +27,13 @@
 	<style>
     /* your override, loaded after */
     .background {
-		margin: 2vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 20vh;
+		 margin: 2vw;
+    	display: flex;
+    	flex-wrap: wrap;
+    	justify-content: center;
+    	align-items: center;
+    	min-height: 20vh;
+		row-gap: 4vh; 
     }
 
 	.normal-text {
@@ -46,7 +48,7 @@
 	</style>
 </head>
 <body>
-	<div class=centered><img src="/assets/fennie.png" width="10%" height="" alt="">
+	<div class=centered><img src="/assets/fennie.png" width="250vw" height="" alt="">
 	</div>
 	
 	<div class="background">
@@ -60,8 +62,7 @@
 			<strong>studying</strong> systems analyst.<br><br>
 			I made this website for an assignment and 
 			I honestly learned a lot of CSS in the process... 
-			<strong>So why not do bad stuff against graphic design 
-			conventions in the process? Lol</strong><br><br>
+			I made this website to aggregate my own stuff, and maybe improve as a programmer.<br><br>
 			Here you will find all of my socials, 
 			and other resources that pertain to.. well, <strong>me</strong>.</p>
     	</div>
@@ -69,23 +70,46 @@
 		</div>
 	
 	
-	<div class="background">
-		<div class="window active" style="max-width: 300px">
+	
+	<div class="background" id="socials">
+		<div class="window active" style="max-width: 100%">
   			<div class="title-bar">
-    			<div class="title-bar-text">A window with contents</div>
+    			<div class="title-bar-text">Content</div>
   			</div>
   		<div class="window-body has-space">
     		<section class="tabs">
   <menu role="tablist" aria-label="Tabs Template">
-    <button role="tab" aria-controls="tab-A" aria-selected="true">Tab A</button>
-    <button role="tab" aria-controls="tab-B">Tab B</button>
-    <button role="tab" aria-controls="tab-C">Tab C</button>
-    <button role="tab" aria-controls="tab-D" disabled>Tab D</button>
+    <button role="tab" aria-controls="tab-A" aria-selected="true">Videos</button>
+    <button role="tab" aria-controls="tab-B">Music</button>
+    <button role="tab" aria-controls="tab-C">Badges of honour</button>
   </menu>
-  <article role="tabpanel" id="tab-A">Tab A is active</article>
-  <article role="tabpanel" id="tab-B" hidden>Tab B is active</article>
-  <article role="tabpanel" id="tab-C" hidden>Tab C is active</article>
-  <article role="tabpanel" id="tab-D" hidden>Tab D is inactive</article>
+  <article role="tabpanel" id="tab-A">
+	<fieldset>
+		<legend>Featured video</legend>
+	<iframe width="500" height="300" src="https://www.youtube.com/embed/Hsh4Z_YvlCs?si=6Wq4yKJn-at4-OMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</fieldset>
+	<section style="display: flex; gap: 6px; align-items: center">
+		<form action="https://www.youtube.com/@FlookyBS" method="get">
+        <button>Watch more on YouTube</button>
+		</form>
+        <label>...and don't forget to subscribe!</label>
+      </section>
+</article>
+  <article role="tabpanel" id="tab-B" hidden>
+	<fieldset>
+		<legend>Featured album/single</legend>
+	<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=841645787/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://fennie.bandcamp.com/album/mommy-issues">Mommy Issues by Fennie</a></iframe>
+	</fieldset>
+	<section style="display: flex; gap: 6px; align-items: center">
+		<form action="https://fennie.bandcamp.com/" method="get">
+        <button>Listen more on Bandcamp</button>
+		</form>
+		<form action="https://soundcloud.com/flookybs" method="get">
+		<button>Listen more on SoundCloud</button>
+		</form>
+      </section>
+</article>
+  <article role="tabpanel" id="tab-C" hidden>None yet!</article>
 </section>
 
 <script type='text/javascript' src="/scripts/win7.js"></script>
@@ -93,38 +117,34 @@
 			
   		</div>
 	</div>
-  		
 		
  	<hr class="separator">
 		<!--Contacts-->
-  		<div class="window glass active" style="max-width: 50%">
+  		<div class="window glass active" style="max-width: 100%">
     		<div class="title-bar">
       			<div class="title-bar-text">Socials and Contacts</div>
-      			<div class="title-bar-controls">
-        			<button aria-label="Minimize"></button>
-        			<button aria-label="Close"></button>
-      			</div>
     		</div>
     		<div class="window-body has-space">
 				<h2>Find me on:</h2>
-     			<button>YouTube</button>
-				<button>Twitter</button>
-        		<button>GitHub</button>
-				<button>SoundCloud</button>
-				<button>Bandcamp</button>
-
-				<hr>
-
-				<h2>Contact me:</h2>
-				<button>E-Mail</button>
-				<button>Escargot MSN</button>
+				<div class="social-links">
+        <form action="https://twitter.com/Flooky"><button>Twitter</button></form>
+        <form action="https://github.com/FlookyBS"><button>GitHub</button></form>
+        <form action="mailto:contact@flooky.monster"><button>E-Mail</button></form>
+        <form action="https://escargot.chat/+fluffeon/profile/"><button>Escargot MSN</button></form>
+    </div>
 			</div>
     	</div>
 			
 	<!--End of Separator-->
 	</div>
 
- 	<p><a target="_blank" href="https://github.com/FlookyBS/website">Visit the site's source</a></p>
-	
+
+	<footer>
+		<hr>
+		<p class="centered small-text">Copyright © 2026 Flooky - Using <a href="https://khang-nd.github.io/7.css">7.css</a></p>
+ 		<p class="centered"><a target="_blank" href="https://github.com/FlookyBS/website">Visit the site's source</a></p>
+	</footer>
+
+
 </body>
 </html>

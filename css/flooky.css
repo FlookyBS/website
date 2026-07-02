@@ -16,11 +16,16 @@ body {
 }
 
 h2, h3, p {
-    padding-left: 1vw
+    padding-left: 0.5vw
+}
+
+a {
+    color: #0066CC
 }
 
 hr {
-    margin: 1.8vh
+    margin-left: 1.8vh;
+    margin-right: 1.8vh;
 }
 
 h2 { 
@@ -31,6 +36,11 @@ h2 {
 
 .introduction {
     display: flex;
+}
+
+.small-text {
+    font-size: 12px;
+    color: rgb(37, 37, 37);
 }
 
 .topbar {
@@ -49,19 +59,6 @@ h2 {
     z-index: 50;
 }
 
-@media (max-width: 600px) {
-    .topbar {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 4px;
-    }
-
-    .topbar .left,
-    .topbar .right {
-        white-space: wrap;
-    }
-}
 .container {
     border: 12px solid cyan;
     margin: 12px;
@@ -100,26 +97,7 @@ h2 {
   width: 85dvw
 }
 
-.button {
-    border: 12px solid red;
-    margin: auto;
-    background-color: RED;
-    display: block;
-    width: fit-content;
-    overflow-wrap: anywhere;
-    box-shadow: 10px 10px darkred;
-    color: white;
-    text-decoration: none;
-    user-select: none;
-}
 
-.button:active {
-    color: darkgray;
-    border: 12px solid darkred;
-    background-color: darkred;
-    box-shadow: none;
-    transform: translate(11px, 11px)
-}
 
 .glowbert {
     width: 150px;
@@ -170,4 +148,16 @@ h2 {
 
 .separator {
   opacity: 0%;
+}
+
+.social-links form {
+    display: inline-block;
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
 }
