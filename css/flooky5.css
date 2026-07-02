@@ -255,8 +255,10 @@ h2 {
 
 .biglink-colour:hover {
   color: #00ae5d;
+  text-decoration: underline;
 }
 
 .link-colour:hover {
-    color: #6ca2f4
+    color: #6ca2f4;
+    text-decoration: underline;
 }
