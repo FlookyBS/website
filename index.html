@@ -22,7 +22,7 @@
     <meta name="twitter:image" content="https://flooky.monster/assets/newfavicon.png">
 	
 	<link rel="stylesheet" href="https://unpkg.com/7.css">
-	<link rel="stylesheet" href="/css/flooky6.css"/>
+	<link rel="stylesheet" href="/css/flooky7.css"/>
 
 	<style>
     /* your override, loaded after */
@@ -46,6 +46,10 @@
 	margin: 0;
     padding: 0;
 	}
+
+	.background > .window {
+    	flex-shrink: 0;
+	}
 	</style>
 </head>
 <body>
@@ -56,7 +60,7 @@
 	</div>
 	
 	<div class="background">
-  		<div class="window glass active" style="max-width: 70dvh">
+  		<div class="window glass active" style="width: min(600px, 90vw); max-width: 100vw">
     		<div class="title-bar" style="background-attachment: local;">
     			<div class="title-bar-text">Information</div>
     		</div>
