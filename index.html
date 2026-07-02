@@ -34,6 +34,7 @@
     	align-items: center;
     	min-height: 20vh;
 		row-gap: 4vh; 
+		column-gap: 4vh;
     }
 
 	.normal-text {
@@ -48,7 +49,10 @@
 	</style>
 </head>
 <body>
-	<div class=centered><img src="/assets/fennie.png" width="250vw" height="" alt="">
+	<div class=centered>
+		<div class="logo">
+			<a href="/"><img src="/assets/fennie.png" width="200vw" height="" alt=""></a>
+		</div>
 	</div>
 	
 	<div class="background">
@@ -57,7 +61,8 @@
     			<div class="title-bar-text">Information</div>
     		</div>
     	<div class="window-body has-space">
-    		<div class="introduction"><img src="/assets/icon.png" height=100% alt=""><h2>My name is <strong>Fen</strong>, but you can call me <strong>Flooky</strong>.</h2></div>
+    		<div class="introduction">
+				<div class="aero-frame"><img src="/assets/fenni.png" alt=""></div><h2>My name is <strong>Fen</strong>, but you can call me <strong>Flooky</strong>.</h2></div>
 			<p>I'm <strong>20 years old</strong> and currently 
 			<strong>studying</strong> systems analyst.<br><br>
 			I made this website for an assignment and 
@@ -67,12 +72,33 @@
 			and other resources that pertain to.. well, <strong>me</strong>.</p>
     	</div>
   			</div>
+		
+
+		<div class="window glass active" style="max-width: 300px">
+  			<div class="title-bar">
+    			<div class="title-bar-text">Pronouns, manners of address, etc</div>
+  			</div>
+  			<div class="window-body has-space">
+    			<section class="tabs">
+  					<menu role="tablist" aria-label="Tabs Template">
+    					<button role="tab" aria-controls="tab-A" aria-selected="true">Tab A</button>
+    					<button role="tab" aria-controls="tab-B">Tab B</button>
+    					<button role="tab" aria-controls="tab-C">Tab C</button>
+    					<button role="tab" aria-controls="tab-D" disabled>Tab D</button>
+  					</menu>
+  				<article role="tabpanel" id="tab-A">Tab A is active</article>
+  				<article role="tabpanel" id="tab-B" hidden>Tab B is active</article>
+  				<article role="tabpanel" id="tab-C" hidden>Tab C is active</article>
+  				<article role="tabpanel" id="tab-D" hidden>Tab D is inactive</article>
+				</section>
+  			</div>
 		</div>
+	</div>
 	
 	
 	
 	<div class="background" id="socials">
-		<div class="window active" style="max-width: 100%">
+		<div class="window glass active" style="max-width: 100%">
   			<div class="title-bar">
     			<div class="title-bar-text">Content</div>
   			</div>
@@ -149,7 +175,7 @@
 
 	<footer>
 		<hr>
-		<p class="centered small-text">Copyright © 2026 Flooky - Using <a href="https://khang-nd.github.io/7.css">7.css</a></p>
+		<p class="centered small-text">Copyright © 2026 Flooky - Using <a href="https://khang-nd.github.io/7.css">7.css</a>. - JavaScript needs to be enabled to provide the full experience.</p>
  		<p class="centered"><a target="_blank" href="https://github.com/FlookyBS/website">Visit the site's source</a></p>
 	</footer>
 

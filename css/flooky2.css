@@ -179,3 +179,31 @@ h2 {
 .badge-array {
     display: flex;
 }
+
+.logo {
+    padding: 1em;
+}
+
+.aero-frame {
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+}
+
+.aero-frame img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    transform: translateX(9px) translateY(9px);
+}
+
+.aero-frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("/assets/aeroborder.png") center/100% 100% no-repeat;
+    pointer-events: none; /* clicks go through */
+    z-index: 1;
+}
