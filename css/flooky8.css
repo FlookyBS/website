@@ -3,18 +3,6 @@
   src: url('/css/fonts/seguisym.ttf') format('truetype');
 }
 
-@keyframes windowOpen {
-	0% {
-		opacity: 0.3;
-		transform: perspective(600px) rotateX(-13deg) translateY(-5px) scale(0.85);
-	}
-	100% {
-		opacity: 1;
-		transform: perspective(600px) rotateX(0deg) rotateY(0deg) translateY(0px)
-			scale(1);
-	}
-}
-
 html, body {
     height: 100%;
     margin: 0;
@@ -100,8 +88,8 @@ h2 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  column-gap: 2rem;
-  row-gap: 2rem;
+  column-gap: 0.2rem;
+  row-gap: 0.2rem;
   max-width: 1400px
 }
 
