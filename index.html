@@ -50,6 +50,35 @@
 	.background > .window {
     	flex-shrink: 0;
 	}
+
+	@keyframes windowOpen {
+	0% {
+		opacity: 0.3;
+		transform: perspective(600px) rotateX(-13deg) translateY(-5px) scale(0.85);
+	}
+	100% {
+		opacity: 1;
+		transform: perspective(600px) rotateX(0deg) rotateY(0deg) translateY(0px)
+			scale(1);
+		}
+	}
+
+	.window {
+		opacity: 0;
+		animation:.5s windowOpen cubic-bezier(.19,1,.22,1) forwards;
+	}
+	
+
+	.window:nth-child(1) { animation-delay: 0s; }
+.window:nth-child(2) { animation-delay: .2s; }
+.window:nth-child(3) { animation-delay: .4s; }
+.window:nth-child(4) { animation-delay: .6s; }
+.window:nth-child(5) { animation-delay: .8s; }
+
+	
+
+
+
 	</style>
 </head>
 <body>
@@ -191,11 +220,12 @@
       </section>
 </article>
   <article role="tabpanel" id="tab-C" hidden>
-	<div class="badge-array">
+	<div class="button-array">
 		<img src="/badges/feminism.gif" alt="">
 		<img src="/badges/freepalestine.gif" alt="">
 		<img src="/badges/fucknazis.gif" alt="">
 		<img src="/badges/loveislove.gif" alt="">
+		<img src="/badges/mandc.jpg" alt="">
 	</div>
   </article>
 </section>
