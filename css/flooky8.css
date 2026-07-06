@@ -41,7 +41,9 @@ hr {
 h2 { 
     font-size: 18px; 
     font-weight: lighter;
-    color: #045BCD;
+    color: #002A9C;
+    margin: 0;
+    padding: 0;
 }
 
 .introduction {
@@ -280,3 +282,21 @@ h2 {
     text-decoration: underline;
 }
 
+.introduction-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.introduction-container .aero-frame {
+    flex-shrink: 0;
+}
+
+.introduction-text {
+    min-width: 0; /* magic flexbox fix */
+}
+
+.introduction-text h2 {
+    margin: 0;
+    word-wrap: break-word;
+}
