@@ -1,7 +1,12 @@
 @font-face {
   font-family: 'Segoe UI';
-  src: url('/css/fonts/seguisym.ttf') format('truetype');
+  src: url('/css/fonts/segoeui.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    src: url('/css/fonts/segoeuib.ttf') format('truetype');
+  }
 
 html, body {
     height: 100%;
@@ -13,6 +18,10 @@ body {
     background: linear-gradient(to bottom, #bccff2, rgb(66, 66, 109)); 
     background-attachment: fixed;
     font-family: 'Segoe UI', sans-serif
+}
+
+b, strong {
+    font-family: 'Segoe UI Bold', sans-serif;
 }
 
 h2, h3, p {
