@@ -43,7 +43,7 @@ h2 {
     font-weight: lighter;
     color: #002A9C;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 0.5vw;
 }
 
 .introduction {
@@ -52,7 +52,7 @@ h2 {
 
 .small-text {
     font-size: 12px;
-    color: rgb(37, 37, 37);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .topbar {
@@ -299,4 +299,8 @@ h2 {
 .introduction-text h2 {
     margin: 0;
     word-wrap: break-word;
+}
+
+p {
+    margin: 0;
 }
