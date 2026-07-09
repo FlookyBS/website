@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	
+	<title>Flooky</title>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="/assets/newfavicon.png">
+	
+	<meta name="description" content="Guess I'm not a bottom feeder, huh?">
+    <meta name="keywords" content="FlookyMonster, FlookyTheCube, FlookyBS, Flooky, Glowbert, Glowy">
+    <meta name="author" content="Fursona - Flooky">
+    <meta property="og:title" content="Fursona - Flooky">
+    <meta property="og:description" content="Guess I'm not a bottom feeder, huh?">
+    <meta property="og:image" content="https://flooky.monster/assets/newfavicon.png">
+    <meta property="og:url" content="https://flooky.monster/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Flooky">
+    <meta name="twitter:description" content="Guess I'm not a bottom feeder, huh?">
+    <meta name="twitter:image" content="https://flooky.monster/assets/newfavicon.png">
+	
+	<link rel="stylesheet" href="https://unpkg.com/7.css">
+	<link rel="stylesheet" href="/css/flooky10.css"/>
+
+	<style>
+    /* your override, loaded after */
+    .background {
+		 margin: 2vw;
+    	display: flex;
+    	flex-wrap: wrap;
+    	justify-content: center;
+    	align-items: center;
+    	min-height: 20vh;
+		row-gap: 4vh; 
+		column-gap: 4vh;
+    }
+
+	.normal-text {
+		color: black;
+	}
+
+	.window-body form {
+    text-align: right;
+	margin: 0;
+    padding: 0;
+	}
+
+	.background > .window {
+    	flex-shrink: 0;
+	}
+
+	@keyframes windowOpen {
+	0% {
+		opacity: 0.3;
+		transform: perspective(600px) rotateX(-13deg) translateY(-5px) scale(0.85);
+	}
+	100% {
+		opacity: 1;
+		transform: perspective(600px) rotateX(0deg) rotateY(0deg) translateY(0px)
+			scale(1);
+		}
+	}
+
+	.window {
+		opacity: 0;
+		animation:.5s windowOpen cubic-bezier(.19,1,.22,1) forwards;
+	}
+	
+
+	.window:nth-child(1) { animation-delay: 0s; }
+.window:nth-child(2) { animation-delay: .2s; }
+.window:nth-child(3) { animation-delay: .4s; }
+.window:nth-child(4) { animation-delay: .6s; }
+.window:nth-child(5) { animation-delay: .8s; }
+
+	
+
+
+
+	</style>
+</head>
+<body>
+	<div class=centered>
+		<div class="logo">
+			<a href="/"><img src="/assets/fennie.png" width="200vw" height="" alt=""></a>
+		</div>
+	</div>
+
+	<div class="background">
+	<div class="window" style="width: 90%">
+		<div class="title-bar">
+		  <div class="title-bar-text">Fursona ref sheet</div>
+		</div>
+		<div class="window-body has-space">
+			<section class="tabs">
+				<menu role="tablist" aria-label="Tabs Template">
+				  <button role="tab" aria-controls="tab-A" aria-selected="true">
+						Main body
+				  </button>
+				  <button role="tab" aria-controls="tab-B">
+						Accessories
+				  </button>
+				  <button role="tab" aria-controls="tab-C">
+						Collar
+				  </button>
+				</menu>
+
+				<article role="tabpanel" id="tab-A">
+					<div class="centered">
+						<a href="/fursona/1.png" target="_blank" rel="noopener noreferrer">
+							<img src="/fursona/1.png" style="width: 100%; max-width: 900px; height: auto;">
+						</a>
+					</div>
+				</article>
+				<article role="tabpanel" id="tab-B" hidden>
+					<div class="centered">
+						<a href="/fursona/2.png" target="_blank" rel="noopener noreferrer">
+							<img src="/fursona/2.png" style="width: 100%; max-width: 600px; height: auto;">
+						</a>
+					</div>
+				</article>
+				<article role="tabpanel" id="tab-C" hidden>
+					<div class="centered">
+						<a href="/fursona/3.png" target="_blank" rel="noopener noreferrer">
+							<img src="/fursona/3.png" style="width: 100%; max-width: 600px; height: auto;">
+						</a>
+					</div>
+				</article>
+			  </section>
+		</div>
+		<div class="status-bar">
+			<p class="status-bar-field">Right-click the image to download it!</p>
+			<p class="status-bar-field">Click on the image to see full size!</p>
+		  </div>
+	  </div>
+
+	  <div class="window active" style="width: min(360px, 100vw); max-width: 100dvw">
+		<div class="title-bar">
+			<div class="title-bar-text">Information</div>
+		  </div>
+		  <div class="window-body has-space">
+			<h2>Name</h2>
+			<p>Flooky</p>
+			<br>
+			<h2>Gender</h2>
+			<p>Trans woman</p>
+			<br>
+			<h2>Pronouns</h2>
+			<p>she/her</p>
+		  </div>
+	  </div>
+
+
+	</div>
+
+	<script type='text/javascript' src="/scripts/win7.js"></script>
+
+	<footer>
+		<hr>
+		<p class="centered small-text">Copyright © 2026 Flooky - Using <a href="https://khang-nd.github.io/7.css">7.css</a>. - JavaScript needs to be enabled to provide the full experience.</p>
+ 		<p class="centered"><a target="_blank" href="https://github.com/FlookyBS/website">Visit the site's source</a></p>
+	</footer>
+
+
+</body>
+</html> 
