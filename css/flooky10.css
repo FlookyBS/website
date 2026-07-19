@@ -304,3 +304,20 @@ h2 {
 p {
     margin: 0;
 }
+
+.frame {
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+    flex-shrink: 0; /* never let this shrink, no matter how tight space gets */
+}
+
+.frame img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    transform: translateX(9px) translateY(9px);
+}
