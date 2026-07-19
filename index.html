@@ -3,8 +3,12 @@
 <head>
 	<meta charset="UTF-8">
  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
- 	
-	<meta http-equiv="refresh" content="0; url=#dialog-demo">
+
+	<script>
+		if (!location.hash) {
+    		location.hash = "#dialog-demo";
+		}
+	</script>
 
 	<title>Flooky</title>
 	
@@ -124,6 +128,10 @@
 		</div>
 	</div>
 	
+	<noscript>
+  		<h1 class="centered"><a href="#dialog-demo">Read this important message.</h1></p>
+	</noscript>
+
 	<div class="background">
   		<div class="window glass active" style="width: min(440px, 80vw); max-width: 100vw">
     		<div class="title-bar" style="background-attachment: local;">
@@ -414,9 +422,13 @@ As I have always said, I have always stood against hate, discrimination, unlawfu
   		</div>
   		<footer style="text-align: center">
 			<div class="social-links">
-			<form action="https://x.com/purpleyou38/status/1764675384778383416"><button><b>Help</b></button></form>
-    		<form>
-				<button type="button" onclick="location.hash='close'">
+			<form action="https://x.com/purpleyou38/status/1764675384778383416">
+				<button>
+					<b>Help</b>
+				</button>
+			</form>
+    		<form action="#close">
+				<button type="submit">
 					OK				
 				</button>
 			</form>
